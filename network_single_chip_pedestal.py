@@ -85,7 +85,7 @@ def conf_root(c, cm, cadd, iog, iochan, pacman_version):
     time.sleep(0.01)
     c[cm].config.enable_piso_upstream = [0, 0, 0, 0]
     c.write_configuration(cm, 'enable_piso_upstream')
-    c[cm].config.enable_piso_downstream = [1, 1, 1, 1]  # [1, 0, 0, 0]  # piso0
+    c[cm].config.enable_piso_downstream = [1, 0, 0, 0]  # piso0:  toward the PACMAN only
     c.write_configuration(cm, 'enable_piso_downstream')
     time.sleep(0.01)
 
